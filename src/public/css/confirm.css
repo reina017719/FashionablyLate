@@ -1,0 +1,92 @@
+.header {
+    background: #fff;
+    border-bottom: 1px solid #edeced;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 15px;
+}
+
+.header__logo {
+    color: #827569;
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 24px;
+}
+
+.confirm__heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    font-style: normal;
+    color: #827569;
+}
+
+.form {
+    margin: 0 auto;
+    width: 70%;
+}
+
+.confirm-table {
+    border: 1px solid #efefef;
+}
+
+.confirm-table__inner {
+    width: 100%;
+}
+
+.confirm-table__header {
+    padding: 15px 50px;
+    width: 30%;
+    border-bottom: 1px solid #efefef;
+    background-color: #bba99a;
+    text-align: left;
+    font-size: 15px;
+    font-weight: 100;
+    color: #fff;
+}
+
+.confirm-table__text {
+    padding: 20px;
+    border-bottom: 1px solid #f6f6f6;
+}
+
+.confirm-table__text input {
+    width: 100%;
+    outline: none;
+    border: none;
+    color: #827569;
+}
+
+.confirm-table__row:last-child .confirm-table__header,
+.confirm-table__row:last-child .confirm-table__text {
+    border-bottom-width: 0;
+}
+
+.form__button {
+    margin-top: 35px;
+    text-align: center;
+}
+
+.form__button-submit {
+    padding: 3px 35px;
+    border: none;
+    background-color: #827569;
+    font-size: 15px;
+    color: #fff;
+    cursor: pointer;
+    margin-right: 20px; /* 横並びのボタンの間隔 */
+    margin-bottom: 20px; /* 縦並びのボタンの間隔 */
+}
+
+.form__button-revise {
+    border: none;
+    background-color: #fff;
+    text-decoration: underline #827569;
+    color: #827569;
+    cursor: pointer;
+}

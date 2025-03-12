@@ -1,0 +1,141 @@
+.header {
+    background: #fff;
+    border-bottom: 1px solid #edeced;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 15px;
+}
+
+.header__logo {
+    color: #827569;
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 24px;
+}
+
+.contact-form__heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-style: normal;
+    color: #827569;
+}
+
+.form {
+    max-width: 60%;
+    /* 最大幅 60% */
+    margin: 0 auto;
+    /* 中央配置 */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: #827569;
+}
+
+.form__group {
+    display: flex;
+    align-items: flex-start;
+    gap: 100px;
+    /* 各要素間の余白を調整 */
+    margin-bottom: 15px;
+    /* 各フォームグループの間隔 */
+}
+
+.form__group-title {
+    display: flex;
+    align-items: center;
+    min-width: 150px;
+    /* ラベル部分の幅を統一 */
+    text-align: right;
+    /* ラベルを右揃え */
+    gap: 2px;
+}
+
+.form__label--item {
+    white-space: nowrap;
+    /* ラベルの改行を防ぐ */
+}
+
+.form__input--text {
+    display: flex;
+    gap: 5px;
+}
+
+.form__label--item {
+    white-space: nowrap;
+    /* ラベルの改行を防ぐ */
+}
+
+.form__label--required {
+    color: #efa4a5;
+    margin-left: 5px;
+}
+
+.form__input--text input,
+.form__input--text select,
+.form__input--text textarea {
+    /*min-width: 220px;*/
+    /* 入力フィールドの最低幅 */
+    padding: 8px;
+    border: none;
+    background-color: #f5f5f5;
+}
+
+::placeholder {
+    color: #99928d;
+}
+
+select:has(option:checked[value=""]) {
+    color: #99928d;
+}
+
+textarea {
+    min-height: 100px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    flex-grow: 0;
+    /* サイズ変更を防ぐ */
+    width: auto;
+}
+
+input[name="last-name"],
+input[name="first-name"] {
+    width: 312px;
+}
+
+input:not([name="last-name"]):not([name="first-name"]):not([type="radio"]):not(
+        [type="tel"]
+    ),
+textarea {
+    width: 630px;
+    /* 電話番号の各入力欄と同じ幅に */
+}
+
+/* 電話番号の入力欄が持っている幅を取得して、適宜調整 */
+input[name="tel1"],
+input[name="tel2"],
+input[name="tel3"] {
+    width: 200px;
+    /* 必要に応じて微調整 */
+}
+
+.form__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form__button-submit {
+    padding: 10px 20px;
+    border: none;
+    background-color: #827569;
+    font-size: 15px;
+    color: #fff;
+    cursor: pointer;
+}

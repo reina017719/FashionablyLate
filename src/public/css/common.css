@@ -1,0 +1,30 @@
+.header__inner {
+    margin: 0 auto;
+    padding: 20px 15px;
+    border-bottom: 1px solid #947b7b;
+    text-align: center;
+    max-width: 1230px;
+}
+
+.header-utilities {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__logo {
+    color: #947b7b;
+    text-decoration: none;
+    font-size: 30px;
+    font-style: normal;
+}
+
+.header-nav__link {
+    background-color: #F4F7F4;
+    color: #DCD5D1;
+    border: #DCD5D1;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+}
